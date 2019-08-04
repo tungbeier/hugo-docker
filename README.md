@@ -1,7 +1,7 @@
 ## Hugo Docker
-![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/tungbeier/hugo)
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/tungbeier/hugo)
-![GitHub License](https://img.shields.io/github/license/tungbeier/hugo-docker)
+[![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/tungbeier/hugo)](https://hub.docker.com/r/tungbeier/hugo)
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/tungbeier/hugo)](https://hub.docker.com/r/tungbeier/hugo/builds)
+[![GitHub License](https://img.shields.io/github/license/tungbeier/hugo-docker)](https://raw.githubusercontent.com/tungbeier/hugo-docker/master/LICENSE)
 
 An alpine image for building a static website with [Hugo](https://gohugo.io/).
 
