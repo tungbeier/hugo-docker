@@ -1,20 +1,13 @@
-## GatsbyJS Docker
-![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/tungbeier/gatsbyjs)
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/tungbeier/gatsbyjs)
-![Docker Pulls](https://img.shields.io/docker/pulls/tungbeier/gatsbyjs)
-![GitHub License](https://img.shields.io/github/license/tungbeier/gatsbyjs-docker)
+## Hugo Docker
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/tungbeier/hugo)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/tungbeier/hugo)
+![GitHub License](https://img.shields.io/github/license/tungbeier/hugo-docker)
 
-An alpine image for serving a website with [GatsbyJS](https://www.gatsbyjs.org/).
+An alpine image for building a static website with [Hugo](https://gohugo.io/).
 
 #### Usage
-`docker run --rm -v "$(pwd)":/app -p 8000:8000 tungbeier/gatsbyjs`<br/>
+`docker run --rm -v "$(pwd)":/app -p 1313:1313 tungbeier/hugo`<br/>
 
-#### Options
-* _-U, --upgrade-to-latest_<br/>
-    Upgrade all the packages to their latest versions (see also [yarn upgrade](https://yarnpkg.com/lang/en/docs/cli/upgrade/))
-* _-u, --upgrade [package]_<br/>
-    Upgrade the given package (see also [yarn upgrade](https://yarnpkg.com/lang/en/docs/cli/upgrade/))
-
-For example:<br/>
-`docker run tungbeier/gatsbyjs -u lodash@^3.5.0`<br/>
-will upgrade lodash before start gatsby develop.
+If no command is given, the command `server -D` will be run as default.<br/>
+Otherwise one of [hugo commands](https://gohugo.io/commands/) can be given at start.<br/> E.g.
+`docker run tungbeier/hugo check`
