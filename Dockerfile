@@ -1,4 +1,4 @@
-FROM alpine:3.9.4
+FROM alpine:3.11.3
 
 LABEL name="tungbeier alpine image for hugo" \
     maintainer="tung beier <beier.tung@web.de>" \
